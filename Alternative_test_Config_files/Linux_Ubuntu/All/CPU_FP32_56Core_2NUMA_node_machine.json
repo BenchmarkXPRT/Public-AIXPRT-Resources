@@ -1,0 +1,1354 @@
+{
+    "delayBetweenWorkloads": 30,
+    "isDemo": false,
+    "iteration": 3,
+    "module": "Deep-Learning",
+    "runtype": "performance",
+    "workloads_config": [
+      {
+        "batch_sizes": [
+          1
+        ],
+        "concurrent_instances": 14,
+        "instance_allocation": [
+          {
+            "physcpubind": "0-3",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "4-7",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "8-11",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "12-15",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "16-19",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "20-23",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "24-27",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "28-31",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "32-35",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "36-39",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "40-43",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "44-47",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "48-51",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "52-55",
+            "membind": "1"
+          }
+  
+        ],
+        "env_variables": {
+            "KMP_BLOCKTIME": "1",
+            "KMP_AFFINITY": "granularity=fine,verbose,compact,1,0",
+            "KMP_SETTINGS": "1",
+            "OMP_NUM_THREADS": "4"
+        },
+        "framework_config": {
+            "allow_soft_placement": true,
+            "enableConfig": true,
+            "inter_op_parallelism_threads": 2,
+            "intra_op_parallelism_threads": 4
+        },
+        "hardware": "cpu",
+        "name": "ResNet-50",
+        "precision": "fp32",
+        "runtype": "performance",
+        "setNUMA": true,
+        "tf_graphTransform": null,
+        "total_requests": 1400
+      },
+      {
+        "batch_sizes": [
+          2
+        ],
+        "concurrent_instances": 14,
+        "instance_allocation": [
+          {
+            "physcpubind": "0-3",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "4-7",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "8-11",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "12-15",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "16-19",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "20-23",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "24-27",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "28-31",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "32-35",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "36-39",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "40-43",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "44-47",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "48-51",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "52-55",
+            "membind": "1"
+          }
+  
+        ],
+        "env_variables": {
+            "KMP_BLOCKTIME": "1",
+            "KMP_AFFINITY": "granularity=fine,verbose,compact,1,0",
+            "KMP_SETTINGS": "1",
+            "OMP_NUM_THREADS": "4"
+        },
+        "framework_config": {
+            "allow_soft_placement": true,
+            "enableConfig": true,
+            "inter_op_parallelism_threads": 2,
+            "intra_op_parallelism_threads": 4
+        },
+        "hardware": "cpu",
+        "name": "ResNet-50",
+        "precision": "fp32",
+        "runtype": "performance",
+        "setNUMA": true,
+        "tf_graphTransform": null,
+        "total_requests": 1400
+      },
+      {
+        "batch_sizes": [
+          4
+        ],
+        "concurrent_instances": 14,
+        "instance_allocation": [
+          {
+            "physcpubind": "0-3",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "4-7",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "8-11",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "12-15",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "16-19",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "20-23",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "24-27",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "28-31",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "32-35",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "36-39",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "40-43",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "44-47",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "48-51",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "52-55",
+            "membind": "1"
+          }
+  
+        ],
+        "env_variables": {
+            "KMP_BLOCKTIME": "1",
+            "KMP_AFFINITY": "granularity=fine,verbose,compact,1,0",
+            "KMP_SETTINGS": "1",
+            "OMP_NUM_THREADS": "4"
+        },
+        "framework_config": {
+            "allow_soft_placement": true,
+            "enableConfig": true,
+            "inter_op_parallelism_threads": 2,
+            "intra_op_parallelism_threads": 4
+        },
+        "hardware": "cpu",
+        "name": "ResNet-50",
+        "precision": "fp32",
+        "runtype": "performance",
+        "setNUMA": true,
+        "tf_graphTransform": null,
+        "total_requests": 1400
+      },
+      {
+        "batch_sizes": [
+          8
+        ],
+        "concurrent_instances": 14,
+        "instance_allocation": [
+          {
+            "physcpubind": "0-3",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "4-7",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "8-11",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "12-15",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "16-19",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "20-23",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "24-27",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "28-31",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "32-35",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "36-39",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "40-43",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "44-47",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "48-51",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "52-55",
+            "membind": "1"
+          }
+  
+        ],
+        "env_variables": {
+            "KMP_BLOCKTIME": "1",
+            "KMP_AFFINITY": "granularity=fine,verbose,compact,1,0",
+            "KMP_SETTINGS": "1",
+            "OMP_NUM_THREADS": "4"
+        },
+        "framework_config": {
+            "allow_soft_placement": true,
+            "enableConfig": true,
+            "inter_op_parallelism_threads": 2,
+            "intra_op_parallelism_threads": 4
+        },
+        "hardware": "cpu",
+        "name": "ResNet-50",
+        "precision": "fp32",
+        "runtype": "performance",
+        "setNUMA": true,
+        "tf_graphTransform": null,
+        "total_requests": 1400
+      },
+      {
+        "batch_sizes": [
+          16
+        ],
+        "concurrent_instances": 14,
+        "instance_allocation": [
+          {
+            "physcpubind": "0-3",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "4-7",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "8-11",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "12-15",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "16-19",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "20-23",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "24-27",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "28-31",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "32-35",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "36-39",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "40-43",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "44-47",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "48-51",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "52-55",
+            "membind": "1"
+          }
+  
+        ],
+        "env_variables": {
+            "KMP_BLOCKTIME": "1",
+            "KMP_AFFINITY": "granularity=fine,verbose,compact,1,0",
+            "KMP_SETTINGS": "1",
+            "OMP_NUM_THREADS": "4"
+        },
+        "framework_config": {
+            "allow_soft_placement": true,
+            "enableConfig": true,
+            "inter_op_parallelism_threads": 2,
+            "intra_op_parallelism_threads": 4
+        },
+        "hardware": "cpu",
+        "name": "ResNet-50",
+        "precision": "fp32",
+        "runtype": "performance",
+        "setNUMA": true,
+        "tf_graphTransform": null,
+        "total_requests": 1400
+      },
+      {
+        "batch_sizes": [
+          32
+        ],
+        "concurrent_instances": 14,
+        "instance_allocation": [
+          {
+            "physcpubind": "0-3",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "4-7",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "8-11",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "12-15",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "16-19",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "20-23",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "24-27",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "28-31",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "32-35",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "36-39",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "40-43",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "44-47",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "48-51",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "52-55",
+            "membind": "1"
+          }
+  
+        ],
+        "env_variables": {
+            "KMP_BLOCKTIME": "1",
+            "KMP_AFFINITY": "granularity=fine,verbose,compact,1,0",
+            "KMP_SETTINGS": "1",
+            "OMP_NUM_THREADS": "4"
+        },
+        "framework_config": {
+            "allow_soft_placement": true,
+            "enableConfig": true,
+            "inter_op_parallelism_threads": 2,
+            "intra_op_parallelism_threads": 4
+        },
+        "hardware": "cpu",
+        "name": "ResNet-50",
+        "precision": "fp32",
+        "runtype": "performance",
+        "setNUMA": true,
+        "tf_graphTransform": null,
+        "total_requests": 1400
+      },
+      {
+        "batch_sizes": [
+          64
+        ],
+        "concurrent_instances": 14,
+        "instance_allocation": [
+          {
+            "physcpubind": "0-3",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "4-7",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "8-11",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "12-15",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "16-19",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "20-23",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "24-27",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "28-31",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "32-35",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "36-39",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "40-43",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "44-47",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "48-51",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "52-55",
+            "membind": "1"
+          }
+  
+        ],
+        "env_variables": {
+            "KMP_BLOCKTIME": "1",
+            "KMP_AFFINITY": "granularity=fine,verbose,compact,1,0",
+            "KMP_SETTINGS": "1",
+            "OMP_NUM_THREADS": "4"
+        },
+        "framework_config": {
+            "allow_soft_placement": true,
+            "enableConfig": true,
+            "inter_op_parallelism_threads": 2,
+            "intra_op_parallelism_threads": 4
+        },
+        "hardware": "cpu",
+        "name": "ResNet-50",
+        "precision": "fp32",
+        "runtype": "performance",
+        "setNUMA": true,
+        "tf_graphTransform": null,
+        "total_requests": 1400
+      },
+      {
+        "batch_sizes": [
+          128
+        ],
+        "concurrent_instances": 14,
+        "instance_allocation": [
+          {
+            "physcpubind": "0-3",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "4-7",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "8-11",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "12-15",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "16-19",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "20-23",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "24-27",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "28-31",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "32-35",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "36-39",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "40-43",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "44-47",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "48-51",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "52-55",
+            "membind": "1"
+          }
+  
+        ],
+        "env_variables": {
+            "KMP_BLOCKTIME": "1",
+            "KMP_AFFINITY": "granularity=fine,verbose,compact,1,0",
+            "KMP_SETTINGS": "1",
+            "OMP_NUM_THREADS": "4"
+        },
+        "framework_config": {
+            "allow_soft_placement": true,
+            "enableConfig": true,
+            "inter_op_parallelism_threads": 2,
+            "intra_op_parallelism_threads": 4
+        },
+        "hardware": "cpu",
+        "name": "ResNet-50",
+        "precision": "fp32",
+        "runtype": "performance",
+        "setNUMA": true,
+        "tf_graphTransform": null,
+        "total_requests": 1400
+      },
+      {
+        "batch_sizes": [
+          1
+        ],
+        "concurrent_instances": 14,
+        "instance_allocation": [
+          {
+            "physcpubind": "0-3",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "4-7",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "8-11",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "12-15",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "16-19",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "20-23",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "24-27",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "28-31",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "32-35",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "36-39",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "40-43",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "44-47",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "48-51",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "52-55",
+            "membind": "1"
+          }
+  
+        ],
+        "env_variables": {
+            "KMP_BLOCKTIME": "1",
+            "KMP_AFFINITY": "granularity=fine,verbose,compact,1,0",
+            "KMP_SETTINGS": "1",
+            "OMP_NUM_THREADS": "4"
+        },
+        "framework_config": {
+            "allow_soft_placement": true,
+            "enableConfig": true,
+            "inter_op_parallelism_threads": 2,
+            "intra_op_parallelism_threads": 4
+        },
+        "hardware": "cpu",
+        "name": "SSD-MobileNet-v1",
+        "precision": "fp32",
+        "runtype": "performance",
+        "setNUMA": true,
+        "tf_graphTransform": null,
+        "total_requests": 1400
+      },
+      {
+        "batch_sizes": [
+          2
+        ],
+        "concurrent_instances": 14,
+        "instance_allocation": [
+          {
+            "physcpubind": "0-3",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "4-7",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "8-11",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "12-15",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "16-19",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "20-23",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "24-27",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "28-31",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "32-35",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "36-39",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "40-43",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "44-47",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "48-51",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "52-55",
+            "membind": "1"
+          }
+  
+        ],
+        "env_variables": {
+            "KMP_BLOCKTIME": "1",
+            "KMP_AFFINITY": "granularity=fine,verbose,compact,1,0",
+            "KMP_SETTINGS": "1",
+            "OMP_NUM_THREADS": "4"
+        },
+        "framework_config": {
+            "allow_soft_placement": true,
+            "enableConfig": true,
+            "inter_op_parallelism_threads": 2,
+            "intra_op_parallelism_threads": 4
+        },
+        "hardware": "cpu",
+        "name": "SSD-MobileNet-v1",
+        "precision": "fp32",
+        "runtype": "performance",
+        "setNUMA": true,
+        "tf_graphTransform": null,
+        "total_requests": 1400
+      },
+      {
+        "batch_sizes": [
+          4
+        ],
+        "concurrent_instances": 14,
+        "instance_allocation": [
+          {
+            "physcpubind": "0-3",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "4-7",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "8-11",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "12-15",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "16-19",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "20-23",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "24-27",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "28-31",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "32-35",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "36-39",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "40-43",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "44-47",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "48-51",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "52-55",
+            "membind": "1"
+          }
+  
+        ],
+        "env_variables": {
+            "KMP_BLOCKTIME": "1",
+            "KMP_AFFINITY": "granularity=fine,verbose,compact,1,0",
+            "KMP_SETTINGS": "1",
+            "OMP_NUM_THREADS": "4"
+        },
+        "framework_config": {
+            "allow_soft_placement": true,
+            "enableConfig": true,
+            "inter_op_parallelism_threads": 2,
+            "intra_op_parallelism_threads": 4
+        },
+        "hardware": "cpu",
+        "name": "SSD-MobileNet-v1",
+        "precision": "fp32",
+        "runtype": "performance",
+        "setNUMA": true,
+        "tf_graphTransform": null,
+        "total_requests": 1400
+      },
+      {
+        "batch_sizes": [
+          8
+        ],
+        "concurrent_instances": 14,
+        "instance_allocation": [
+          {
+            "physcpubind": "0-3",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "4-7",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "8-11",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "12-15",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "16-19",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "20-23",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "24-27",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "28-31",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "32-35",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "36-39",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "40-43",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "44-47",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "48-51",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "52-55",
+            "membind": "1"
+          }
+  
+        ],
+        "env_variables": {
+            "KMP_BLOCKTIME": "1",
+            "KMP_AFFINITY": "granularity=fine,verbose,compact,1,0",
+            "KMP_SETTINGS": "1",
+            "OMP_NUM_THREADS": "4"
+        },
+        "framework_config": {
+            "allow_soft_placement": true,
+            "enableConfig": true,
+            "inter_op_parallelism_threads": 2,
+            "intra_op_parallelism_threads": 4
+        },
+        "hardware": "cpu",
+        "name": "SSD-MobileNet-v1",
+        "precision": "fp32",
+        "runtype": "performance",
+        "setNUMA": true,
+        "tf_graphTransform": null,
+        "total_requests": 1400
+      },
+      {
+        "batch_sizes": [
+          16
+        ],
+        "concurrent_instances": 14,
+        "instance_allocation": [
+          {
+            "physcpubind": "0-3",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "4-7",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "8-11",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "12-15",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "16-19",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "20-23",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "24-27",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "28-31",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "32-35",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "36-39",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "40-43",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "44-47",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "48-51",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "52-55",
+            "membind": "1"
+          }
+  
+        ],
+        "env_variables": {
+            "KMP_BLOCKTIME": "1",
+            "KMP_AFFINITY": "granularity=fine,verbose,compact,1,0",
+            "KMP_SETTINGS": "1",
+            "OMP_NUM_THREADS": "4"
+        },
+        "framework_config": {
+            "allow_soft_placement": true,
+            "enableConfig": true,
+            "inter_op_parallelism_threads": 2,
+            "intra_op_parallelism_threads": 4
+        },
+        "hardware": "cpu",
+        "name": "SSD-MobileNet-v1",
+        "precision": "fp32",
+        "runtype": "performance",
+        "setNUMA": true,
+        "tf_graphTransform": null,
+        "total_requests": 1400
+      },
+      {
+        "batch_sizes": [
+          32
+        ],
+        "concurrent_instances": 14,
+        "instance_allocation": [
+          {
+            "physcpubind": "0-3",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "4-7",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "8-11",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "12-15",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "16-19",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "20-23",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "24-27",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "28-31",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "32-35",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "36-39",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "40-43",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "44-47",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "48-51",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "52-55",
+            "membind": "1"
+          }
+  
+        ],
+        "env_variables": {
+            "KMP_BLOCKTIME": "1",
+            "KMP_AFFINITY": "granularity=fine,verbose,compact,1,0",
+            "KMP_SETTINGS": "1",
+            "OMP_NUM_THREADS": "4"
+        },
+        "framework_config": {
+            "allow_soft_placement": true,
+            "enableConfig": true,
+            "inter_op_parallelism_threads": 2,
+            "intra_op_parallelism_threads": 4
+        },
+        "hardware": "cpu",
+        "name": "SSD-MobileNet-v1",
+        "precision": "fp32",
+        "runtype": "performance",
+        "setNUMA": true,
+        "tf_graphTransform": null,
+        "total_requests": 1400
+      },
+      {
+        "batch_sizes": [
+          64
+        ],
+        "concurrent_instances": 14,
+        "instance_allocation": [
+          {
+            "physcpubind": "0-3",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "4-7",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "8-11",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "12-15",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "16-19",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "20-23",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "24-27",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "28-31",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "32-35",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "36-39",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "40-43",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "44-47",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "48-51",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "52-55",
+            "membind": "1"
+          }
+  
+        ],
+        "env_variables": {
+            "KMP_BLOCKTIME": "1",
+            "KMP_AFFINITY": "granularity=fine,verbose,compact,1,0",
+            "KMP_SETTINGS": "1",
+            "OMP_NUM_THREADS": "4"
+        },
+        "framework_config": {
+            "allow_soft_placement": true,
+            "enableConfig": true,
+            "inter_op_parallelism_threads": 2,
+            "intra_op_parallelism_threads": 4
+        },
+        "hardware": "cpu",
+        "name": "SSD-MobileNet-v1",
+        "precision": "fp32",
+        "runtype": "performance",
+        "setNUMA": true,
+        "tf_graphTransform": null,
+        "total_requests": 1400
+      },
+      {
+        "batch_sizes": [
+          128
+        ],
+        "concurrent_instances": 14,
+        "instance_allocation": [
+          {
+            "physcpubind": "0-3",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "4-7",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "8-11",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "12-15",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "16-19",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "20-23",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "24-27",
+            "membind": "0"
+          },
+          {
+            "physcpubind": "28-31",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "32-35",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "36-39",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "40-43",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "44-47",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "48-51",
+            "membind": "1"
+          },
+          {
+            "physcpubind": "52-55",
+            "membind": "1"
+          }
+  
+        ],
+        "env_variables": {
+            "KMP_BLOCKTIME": "1",
+            "KMP_AFFINITY": "granularity=fine,verbose,compact,1,0",
+            "KMP_SETTINGS": "1",
+            "OMP_NUM_THREADS": "4"
+        },
+        "framework_config": {
+            "allow_soft_placement": true,
+            "enableConfig": true,
+            "inter_op_parallelism_threads": 2,
+            "intra_op_parallelism_threads": 4
+        },
+        "hardware": "cpu",
+        "name": "SSD-MobileNet-v1",
+        "precision": "fp32",
+        "runtype": "performance",
+        "setNUMA": true,
+        "tf_graphTransform": null,
+        "total_requests": 1400
+      }
+    ]
+  }
+  
