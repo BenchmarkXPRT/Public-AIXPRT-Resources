@@ -70,7 +70,7 @@ For Nvidia Tegra Xavier
  1. Choose the target machine and run the commands <br />
 	 Compile the sources
 		`Goto <AIXPRT_Directory>/Modules/Deep-Learning/workloads/commonsources/bin/src/<workload> and run "make clean" and "make" to create binaries`<br />
-         NOTE : <workload> in the above path is each folder in the src directory.
+         Note: <workload> in the above path is each folder in the src directory.
 
 
  2. Navigate to directory: <br />

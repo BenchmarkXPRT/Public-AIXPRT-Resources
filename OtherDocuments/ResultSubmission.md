@@ -11,6 +11,6 @@
 
 4. Detailed system information required to reproduce the results. Please use the [SystemInfo.csv](https://github.com/BenchmarkXPRT/Public-AIXPRT-Resources/blob/master/OtherDocuments/SystemInfo.csv) template to provide system information. Any additional info can be added at the end of the csv.
 
-5. If any scripts (or) models (or) {any files} are customized for result generation , please provide these changes.
+5. If any scripts (or) models (or) {any files} are customized for result generation, please provide these changes.
 
 Principled Technologies will review the results submission and get back to you.

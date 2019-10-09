@@ -14,7 +14,7 @@ For Nvidia Discrete Graphics Cards
 #### Steps to configure the machine and workloads
 
 1. Install dependencies:
-   * These workloads will require CUDA , cuDNN and TensorRT . Please install the appropriate version of Cuda and cudnn associated with the TensorRT version.
+   * These workloads will require CUDA, cuDNN and TensorRT . Please install the appropriate version of Cuda and cudnn associated with the TensorRT version.
 
     [Note] The instructions below assume the user is not connected to Internet via Proxy.
    * Install [Visual Studio](https://docs.microsoft.com/en-us/visualstudio/install/install-visual-studio?view=vs-2019). During the installation of Visual Studio please select the below option in the installation wizard and install. <br />

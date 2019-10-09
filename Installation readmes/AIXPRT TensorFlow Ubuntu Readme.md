@@ -4,7 +4,7 @@ Workloads are built and tested using TensorFlow (version 1.14) framework. For mo
 
 ## 2. System Requirements
    * This Module can run on all the systems supported by TensorFlow.
-   * NOTE : When running tensorflow-gpu on Ubuntu, we recommend running Ubuntu 18.04.1.
+   * Note: When running tensorflow-gpu on Ubuntu, we recommend running Ubuntu 18.04.1.
 
 ## 3. Run Benchmark
 
@@ -25,7 +25,7 @@ Workloads are built and tested using TensorFlow (version 1.14) framework. For mo
     ```
 3. Install TensorFlow 1.14
 
-   * NOTE : Workloads are built and tested with TensorFlow 1.14 and do not support the latest TensorFlow 2.0 version.
+   * Note: Workloads are built and tested with TensorFlow 1.14 and do not support the latest TensorFlow 2.0 version.
 
    * For instructions to install on Intel CPU and AMD CPU, follow [TensorFlow Website](https://www.tensorflow.org/install/)    NVIDIA GPU NVIDIA [TensorFlow GPU Website](https://www.tensorflow.org/install/gpu)
 
