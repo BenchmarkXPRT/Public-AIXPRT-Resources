@@ -1,6 +1,6 @@
 ### How to edit config
 
-AIXPRT application runs on the default configaration provided by the workloads. However once a default config file is available/generated, a user can edit this config to change the workload behaviour.
+AIXPRT runs on the default configaration provided by the workloads. However once a default config file is available/generated, a user can edit this config to change the workload behaviour.
 
 NOTE : Please perform at least 1 run of the benchmark so that a default config is generated at AIXPRT/Config/ or use one of the provided config files by copying to AIXPRT/Config/
 
