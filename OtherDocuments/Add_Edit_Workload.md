@@ -23,7 +23,7 @@ cd AIXPRT/Harness
 python3 index.py
 
 ```
-Once the run is completed, the application closes. At this time, please go to /AIXPRT/Results/{ConfigFileName} folder to find the results in a json format. The result file name will be of the format ‘<Deep-Learning>_result_<time stamp>.json’.
+Once the run is completed, the application closes. At this time, please go to /AIXPRT/Results/{ConfigFileName} folder to find the results in a JSON format. The result file name will be of the format ‘<Deep-Learning>_result_<time stamp>.json’.
 
 9. Now push your changes to upstream of your branch ! Done !
 
