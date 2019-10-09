@@ -39,6 +39,8 @@ For Nvidia Discrete Graphics Cards
 
    * On Windows search , type "Advanced system Settings" and open View Advanced system Settings .Click on  "Environment Variable" . 
    * In "System variable" section select "New" . Set variable name to AIXPRT_INCLUDE and the below paths on your system for variable vaules with ; seperated. Save the environment variable after adding.
+
+
       ```
 
       C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\{cudaVersion}\include
@@ -56,6 +58,7 @@ For Nvidia Discrete Graphics Cards
 
    * In "System variable" section select "New" . Set variable name to AIXPRT_LINKER and the below paths on your system for variable vaules with ; seperated. Save the environment variable after adding.
 
+
       ```
       
       C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\{cudaVersion}\lib\x64\*.lib
@@ -64,6 +67,8 @@ For Nvidia Discrete Graphics Cards
       {path_to_opencvDownload}\opencv\build\x64\vc14\lib\*.lib
 
       ```
+
+
 3. Compile the sources 
 
 	* Navigate to  <AIXPRT_Directory>/Modules/Deep-Learning/workloads/commonsources/bin/src/MultiStream_resnet and open the .sln (Microsoft Visual Studio Solution) file in Visula Studio.
@@ -73,42 +78,42 @@ For Nvidia Discrete Graphics Cards
   * Navigate to  <AIXPRT_Directory>/Modules/Deep-Learning/workloads/commonsources/bin/src/MultiStream_ssd and open the .sln (Microsoft Visual Studio Solution) file in Visula Studio.
 
   * On top rightside of Visula Studio, UI change " Solution Configuration" to "Release" .Click the green button  which says " Local Windows Debugger" to compile the source. Once the code compiles a console window opens to confirm the success , press any button to close that console.
+
+
 #### Steps to run benchmark
- 1. Navigate to directory:
+ 1. Navigate to directory:<br />
  	`cd /{path_to}/AIXPRT/Harness/`
 
  2. Run the benchmark:<br />
 	`python3 index.py`
+
+
    On Windows, the python3 command is not recognised  by default. Please make a copy of your python.exe and rename as python3.exe
    
-## Results
+## 3. Results
 
-When the test is complete, the benchmark saves the results to AIXPRT/Resultsin JSONformat, and also generates CSV files with the name {ConfigName}_RESULTS_SUMMARY.csv
-To submit results, please follow the instructions in AIXPRT/ResultSubmission.md or at https://www.principledtechnologies.com/benchmarkxprt/aixprt/2019/submit-results.php.
+When the test is complete, the benchmark saves the results to AIXPRT/Resultsin JSON format, and also generates CSV files with the name {ConfigName}_RESULTS_SUMMARY.csv
+To submit results, please follow the instructions in AIXPRT/ResultSubmission.md or at [AIXPRT Results Submission](https://github.com/BenchmarkXPRT/Public-AIXPRT-Resources/blob/master/OtherDocuments/ResultSubmission.md)
 
 
 ##### Sample results summary file <br/>
 
-Each results summary file has three sections: SYSTEM INFORMATION, RESULTSSUMMARY and DETAILED RESULTS.<br/>
- 1. SYSTEM INFORMATION <br/>
-    This section provides basic information about the system under test. <br/>
-    ![alt text](https://github.com/BenchmarkXPRT/AIXPRT/tree/master/Tensorflow/AIXPRT/Harness/assets/tensorflow_systemInfo.png)
+   Each results summary file has three sections: SYSTEM INFORMATION, RESULTSSUMMARY and DETAILED RESULTS.<br/>
+   1. SYSTEM INFORMATION <br/>
+   This section provides basic information about the system under test. <br/>
 
- 2. RESULTSSUMMARY <br/>
-    AIXPRT measures inference latency and throughput for image recognition (ResNet-50) and object detection (SSD-MobileNet) tasks. Batching tasks allows AI applications to achieve 
-higher levels of throughput, but higher throughput may come at the expense of increased latency per task. In real-time or near real-time use cases like performing image recognition 
-on individual photos being captured by a camera, lowerlatency is important to enable better user experience. In other cases, like performing image recognition on a large library of 
-photos, higher throughput through batching images or concurrent instances may allow faster completion of the overall workload. The achieve optimal latency and/or throughput levels, 
-AI applications often tune batch sizes and/or concurrent instances according to a system’s hardware capabilities, such as the number of available processor cores and threads.
-To represent a spectrum of common tunings, AIXPRT tests AI tasks in different batch sizes (1 –32 is the default in this package) that are relevant to the target test system. 
-AIXPRT then reports the maximum throughput and minimum latency for image recognition (ResNet-50) and object detection (SSD-MobileNet v1) usages.<br/>
-The AIXPRT results summary (example below) makes iteasier to quickly identify relevant comparisons between systems. <br/>
+   ![alt text](https://github.com/BenchmarkXPRT/Public-AIXPRT-Resources/blob/master/assets/tensorflow_systemInfo.png)
 
- ![alt text](https://github.com/BenchmarkXPRT/AIXPRT/tree/master/Tensorflow/AIXPRT/Harness/assets/results_summary.png)
+   2. RESULTSSUMMARY <br/>
+   AIXPRT measures inference latency and throughput for image recognition (ResNet-50) and object detection (SSD-MobileNet) tasks. Batching tasks allows AI applications to achieve higher levels of throughput, but higher throughput may come at the expense of increased latency per task. In real-time or near real-time use cases like performing image recognition on individual photos being captured by a camera, lowerlatency is important to enable better user experience. In other cases, like performing image recognition on a large library of photos, higher throughput through batching images or concurrent instancesmay allowfaster completion of the overall workload. The achieveoptimal latency and/or throughput levels, AI applications often tune batch sizes and/or concurrent instances according to a system’s hardware capabilities, such as the number of availableprocessor cores and threads.To represent a spectrum of common tunings, AIXPRT tests AI tasks in different batch sizes (1 - 32 is the default in this package) that are relevant to the target test system. 
+   AIXPRT then reports the maximum throughput and minimum latency for image recognition (ResNet-50) and object detection (SSD-MobileNet v1)usages.<br/>
+   The AIXPRT results summary (example below) makes it easier to quickly identify relevant comparisons between systems. <br/>
+
+   ![alt text](https://github.com/BenchmarkXPRT/Public-AIXPRT-Resources/blob/master/assets/results_summary.png)
 
 
- 3. DETAILED RESULTS <br/>
-   This section shows the throughput and latency results for each AItask configuration tested by the benchmark. 
-AIXPRT runs each AI task (e.g. ResNet-50, Batch1, on CPU) multiple times andreports the average inference throughput and corresponding latency percentiles.
+   3. DETAILED RESULTS <br/>
+   This section shows the throughput and latency results for each AItask configuration testedbythebenchmark. 
+   AIXPRT runs each AI task (e.g. ResNet-50, Batch1, on CPU) multiple times andreports the average inference throughput and correspondinglatencypercentiles.
 
-![alt text](https://github.com/BenchmarkXPRT/AIXPRT/tree/master/Tensorflow/AIXPRT/Harness/assets/detailed_results.png)
+   ![alt text](https://github.com/BenchmarkXPRT/Public-AIXPRT-Resources/blob/master/assets/detailed_results.png)

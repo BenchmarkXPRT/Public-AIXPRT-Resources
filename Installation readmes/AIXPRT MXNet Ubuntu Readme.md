@@ -32,6 +32,7 @@ It can run single-batch , multi-batch and multi instance scenerios.
         ```
         cd AIXPRT/Harness
         ```
+        
 2. Run the benchmark
 
 THIS PARTICULAR WORKLOAD REQUIRES KAGGLE'S SERVICES AND ARE SUBJECT TO THE TERMS: https://www.kaggle.com/terms
@@ -52,19 +53,19 @@ To submit results, please follow the instructions in AIXPRT/ResultSubmission.md 
 Each results summary file has three sections: SYSTEM INFORMATION, RESULTSSUMMARY and DETAILED RESULTS.<br/>
  1. SYSTEM INFORMATION <br/>
     This section provides basic information about the system under test. <br/>
-    ![alt text](https://github.com/BenchmarkXPRT/AIXPRT/tree/master/Tensorflow/AIXPRT/Harness/assets/mxnet_systeminfo.png)
+    ![alt text](https://github.com/BenchmarkXPRT/Public-AIXPRT-Resources/blob/master/assets/mxnet_systeminfo.png)
 
  2. RESULTSSUMMARY <br/>
     AIXPRT measures inference latency and throughput for Wide and Deep Recommendation task. Batching allows AI applications to achieve 
 higher levels of throughput, but higher throughput may come at the expense of increased latency per task. 
-AIXPRT thenreports the maximum throughput and minimum latency for Wide and Deep Recommendation usages.<br/>
-The AIXPRT results summary (example below) makes iteasier to quickly identify relevant comparisons between systems. <br/>
+AIXPRT then reports the maximum throughput and minimum latency for Wide and Deep Recommendation usages.<br/>
+The AIXPRT results summary (example below) makes it easier to quickly identify relevant comparisons between systems. <br/>
 
- ![alt text](https://github.com/BenchmarkXPRT/AIXPRT/tree/master/Tensorflow/AIXPRT/Harness/assets/mxnet_results_sumary.png)
+ ![alt text](https://github.com/BenchmarkXPRT/Public-AIXPRT-Resources/blob/master/assets/mxnet_results_sumary.png)
 
 
  3. DETAILED RESULTS <br/>
-   This section shows the throughput and latency results for each AItask configuration testedbythebenchmark. 
-AIXPRT runs each AI task (e.g. ResNet-50, Batch1, on CPU) multiple times andreports the average inference throughput and correspondinglatencypercentiles.
+   This section shows the throughput and latency results for each AI task configuration tested by the benchmark. 
+AIXPRT runs each AI task (e.g. ResNet-50, Batch1, on CPU) multiple times and reports the average inference throughput and corresponding latency percentiles.
 
-![alt text](https://github.com/BenchmarkXPRT/AIXPRT/tree/master/Tensorflow/AIXPRT/Harness/assets/mxnet_result_details.png)
+![alt text](https://github.com/BenchmarkXPRT/Public-AIXPRT-Resources/blob/master/assets/mxnet_result_details.png)
