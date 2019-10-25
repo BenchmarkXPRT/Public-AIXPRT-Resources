@@ -1,22 +1,22 @@
 ## 1. Introduction
-This module contains workloads to evaluate the system performance using use cases related to Image Classification and Object Detection using TensorFlow. It has workloads “resnet50_v1” and “ssd_mobilenet” and can run Single, Multi-Batch and Multi-Instance scenarios.
+This module contains workloads to evaluate the system performance using use cases related to image classification and object detection using TensorFlow. It has workloads “ResNet50_v1” and “ssd_mobilenet” and can run single, multi-batch, and multi-instance scenarios.
 Workloads are built and tested using TensorFlow (version 1.14) framework. For more information about TensorFlow please follow the link: https://www.tensorflow.org. Workloads run with fp32 precision by default.
 
 ## 2. System Requirements
-   * This Module can run on all the systems supported by TensorFlow.
+   * This module can run on all the systems supported by TensorFlow.
    * Note: When running tensorflow-gpu on Ubuntu, we recommend running Ubuntu 18.04.1.
 
-## 3. Run Benchmark
+## 3. Run the Benchmark
 
 ##### Steps to configure the machine
 
 ####### Windows
 * Install dependencies
-  1. [Python3 for windows](https://www.python.org/downloads/windows/) .Please make sure to install the right version of python3 that is supported by TensorFlow.
+  1. [Python3 for windows](https://www.python.org/downloads/windows/). Please make sure to install the right version of python3 that is supported by TensorFlow.
 
-  2. Navigate to python3 install directory and duplicate python.exe file. Rename the duplicate file to python3.exe
+  2. Navigate to the python3 install directory and duplicate python.exe file. Rename the duplicate file to python3.exe.
 
-  3. Install dependencies
+  3. Install dependencies.
 
      ```
      pip3 install pyreadline
@@ -26,13 +26,12 @@ Workloads are built and tested using TensorFlow (version 1.14) framework. For mo
      pip3 install --upgrade pypiwin32
 
      ```
-   4. Install TensorFlow
+   4. Install TensorFlow.
 
 
-     For instructions to install on Intel CPU and AMD CPU, follow [TensorFlow Website](https://www.tensorflow.org/install/pip)
-     NVIDIA GPU NVIDIA [TensorFlow GPU Website](https://www.tensorflow.org/install/gpu#windows_setup).
+     For instructions on how to install on Intel CPUs and AMD CPUs, follow the instructions on the [TensorFlow website](https://www.tensorflow.org/install/pip). For NVIDIA GPUs, follow the instructions on the NVIDIA [TensorFlow GPU website](https://www.tensorflow.org/install/gpu#windows_setup).
 
-       * Below are some simple instruction to run the benchmark. However users are free to choose to install any different type of
+       * Below are some simple instructions for running the benchmark. However, users are free to choose to install any different type of
          tensorflow according to the system they are running on.
 
          ```
@@ -57,7 +56,7 @@ Workloads are built and tested using TensorFlow (version 1.14) framework. For mo
 
 
 
-##### Steps to run benchmark
+##### Steps to run the benchmark
 
  1. Navigate to directory:
 
@@ -89,7 +88,7 @@ To submit results, please follow the instructions in AIXPRT/ResultSubmission.md 
    ![alt text](https://github.com/BenchmarkXPRT/Public-AIXPRT-Resources/blob/master/assets/tensorflow_systemInfo.png)
 
    2. RESULTS SUMMARY <br/>
-   AIXPRT measures inference latency and throughput for image recognition (ResNet-50) and object detection (SSD-MobileNet) tasks. Batching tasks allows AI applications to achieve higher levels of throughput, but higher throughput may come at the expense of increased latency per task. In real-time or near real-time use cases like performing image recognition on individual photos being captured by a camera, lower latency is important to enable better user experience. In other cases, like performing image recognition on a large library of photos, higher throughput through batching images or concurrent instances may allow faster completion of the overall workload. The achieve optimal latency and/or throughput levels, AI applications often tune batch sizes and/or concurrent instances according to a system’s hardware capabilities, such as the number of available processor cores and threads.To represent a spectrum of common tunings, AIXPRT tests AI tasks in different batch sizes (1 - 32 is the default in this package) that are relevant to the target test system.
+   AIXPRT measures inference latency and throughput for image recognition (ResNet-50) and object detection (SSD-MobileNet) tasks. batching tasks allows AI applications to achieve higher levels of throughput, but higher throughput may come at the expense of increased latency per task. In real-time or near real-time use cases like performing image recognition on individual photos being captured by a camera, lower latency is important to enable better user experience. In other cases, like performing image recognition on a large library of photos, higher throughput through batching images or concurrent instances may allow faster completion of the overall workload. The achieve optimal latency and/or throughput levels, AI applications often tune batch sizes and/or concurrent instances according to a system’s hardware capabilities, such as the number of available processor cores and threads.To represent a spectrum of common tunings, AIXPRT tests AI tasks in different batch sizes (1 - 32 is the default in this package) that are relevant to the target test system.
    AIXPRT then reports the maximum throughput and minimum latency for image recognition (ResNet-50) and object detection (SSD-MobileNet v1)usages.<br/>
    The AIXPRT results summary (example below) makes it easier to quickly identify relevant comparisons between systems. <br/>
 
@@ -98,6 +97,6 @@ To submit results, please follow the instructions in AIXPRT/ResultSubmission.md 
 
    3. DETAILED RESULTS <br/>
    This section shows the throughput and latency results for each AI task configuration tested by the benchmark.
-   AIXPRT runs each AI task (e.g. ResNet-50, Batch1, on CPU) multiple times and reports the average inference throughput and corresponding latency percentiles.
+   AIXPRT runs each AI task (e.g. ResNet-50, batch1, on CPU) multiple times and reports the average inference throughput and corresponding latency percentiles.
 
    ![alt text](https://github.com/BenchmarkXPRT/Public-AIXPRT-Resources/blob/master/assets/detailed_results.png)

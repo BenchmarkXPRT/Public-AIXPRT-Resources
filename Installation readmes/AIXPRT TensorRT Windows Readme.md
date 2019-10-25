@@ -1,9 +1,9 @@
 ﻿## 1. Introduction
-This module contains workloads to evaluate the system performance of use cases related to Image Classification and Object Detection using TensorRT optimizations.
-It has workloads “resnet50_v1”, "ssd-mobilenet-v1" and can run Single and Multi-Batch size scenarios.
+This module contains workloads to evaluate the system performance of use cases related to image classification and object detection using TensorRT optimizations.
+It has workloads “ResNet50_v1”, "SSD-MobileNet-v1" and can run single- and multi-batch size scenarios.
 
 ## 2. System Requirements
-For Nvidia Discrete Graphics Cards
+For NVIDIA Discrete Graphics Cards
 * Operating System:
 	Windows
 * GPU:
@@ -71,7 +71,7 @@ For Nvidia Discrete Graphics Cards
 
 3. Compile the sources
 
-	* Navigate to  <AIXPRT_Directory>/Modules/Deep-Learning/workloads/commonsources/bin/src/MultiStream_resnet and open the .sln (Microsoft Visual Studio Solution) file in Visual Studio.
+	* Navigate to  <AIXPRT_Directory>/Modules/Deep-Learning/workloads/commonsources/bin/src/MultiStream_ResNet and open the .sln (Microsoft Visual Studio Solution) file in Visual Studio.
 
   * On top-right side of the Visual Studio UI, change "Solution Configuration" to "Release". Click the green button which says "Local Windows Debugger" to compile the source. Once the code compiles a console window opens to confirm the success, press any button to close that console.
 
@@ -105,7 +105,7 @@ To submit results, please follow the instructions in AIXPRT/ResultSubmission.md 
    ![alt text](https://github.com/BenchmarkXPRT/Public-AIXPRT-Resources/blob/master/assets/tensorflow_systemInfo.png)
 
    2. RESULTS SUMMARY <br/>
-   AIXPRT measures inference latency and throughput for image recognition (ResNet-50) and object detection (SSD-MobileNet) tasks. Batching tasks allows AI applications to achieve higher levels of throughput, but higher throughput may come at the expense of increased latency per task. In real-time or near real-time use cases like performing image recognition on individual photos being captured by a camera, lower latency is important to enable better user experience. In other cases, like performing image recognition on a large library of photos, higher throughput through batching images or concurrent instances may allow faster completion of the overall workload. The achieve optimal latency and/or throughput levels, AI applications often tune batch sizes and/or concurrent instances according to a system’s hardware capabilities, such as the number of available processor cores and threads.To represent a spectrum of common tunings, AIXPRT tests AI tasks in different batch sizes (1 - 32 is the default in this package) that are relevant to the target test system.
+   AIXPRT measures inference latency and throughput for image recognition (ResNet-50) and object detection (SSD-MobileNet) tasks. batching tasks allows AI applications to achieve higher levels of throughput, but higher throughput may come at the expense of increased latency per task. In real-time or near real-time use cases like performing image recognition on individual photos being captured by a camera, lower latency is important to enable better user experience. In other cases, like performing image recognition on a large library of photos, higher throughput through batching images or concurrent instances may allow faster completion of the overall workload. The achieve optimal latency and/or throughput levels, AI applications often tune batch sizes and/or concurrent instances according to a system’s hardware capabilities, such as the number of available processor cores and threads.To represent a spectrum of common tunings, AIXPRT tests AI tasks in different batch sizes (1 - 32 is the default in this package) that are relevant to the target test system.
    AIXPRT then reports the maximum throughput and minimum latency for image recognition (ResNet-50) and object detection (SSD-MobileNet v1)usages.<br/>
    The AIXPRT results summary (example below) makes it easier to quickly identify relevant comparisons between systems. <br/>
 
@@ -114,6 +114,6 @@ To submit results, please follow the instructions in AIXPRT/ResultSubmission.md 
 
    3. DETAILED RESULTS <br/>
    This section shows the throughput and latency results for each AI task configuration tested by the benchmark.
-   AIXPRT runs each AI task (e.g. ResNet-50, Batch1, on CPU) multiple times and reports the average inference throughput and corresponding latency percentiles.
+   AIXPRT runs each AI task (e.g. ResNet-50, batch1, on CPU) multiple times and reports the average inference throughput and corresponding latency percentiles.
 
    ![alt text](https://github.com/BenchmarkXPRT/Public-AIXPRT-Resources/blob/master/assets/detailed_results.png)
